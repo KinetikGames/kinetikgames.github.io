@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creations</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter,sans-serif;
+background:#0a0a0a;
+color:white;
+overflow:hidden;
+}
+
+:root{
+--orange:#ff6a00;
+--line:#1f1f1f;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 50px;
+background:rgba(10,10,10,.88);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:14px;
+font-weight:900;
+letter-spacing:2px;
+}
+
+.logo img{
+height:36px;
+}
+
+nav a{
+color:#8a8a8a;
+text-decoration:none;
+font-weight:600;
+transition:.2s;
+}
+
+nav a:hover{
+color:white;
+}
+
+/* CENTER */
+.center{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+position:relative;
+}
+
+/* glow */
+.center::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,var(--orange),transparent 70%);
+opacity:.10;
+filter:blur(90px);
+}
+
+h1{
+font-size:clamp(3rem,8vw,6rem);
+font-weight:900;
+letter-spacing:-4px;
+}
+
+h1 span{
+color:var(--orange);
+}
+
+p{
+margin-top:18px;
+color:#9a9a9a;
+max-width:600px;
+line-height:1.7;
+font-size:1.05rem;
+}
+
+.badge{
+margin-top:30px;
+padding:10px 18px;
+border:1px solid var(--line);
+border-radius:999px;
+color:#bbb;
+font-weight:600;
+letter-spacing:1px;
+font-size:.85rem;
+}
+
+/* back link */
+.back{
+position:absolute;
+top:22px;
+left:22px;
+font-size:.9rem;
+color:#888;
+text-decoration:none;
+}
+
+.back:hover{
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<img src="https://ik.imagekit.io/l7uslhlci/IMG_4336.png?updatedAt=1781040819005">
+<span>KINETIK</span>
+</div>
+
+<a href="index.html">Home</a>
+
+</nav>
+
+<a class="back" href="index.html">← Back</a>
+
+<div class="center">
+
+<h1>
+CREATIONS<br>
+<span>COMING SOON</span>
+</h1>
+
+<p>
+This space is being prepared for future work, experiments, and projects.
+Nothing here yet — but something is building underneath.
+</p>
+
+<div class="badge">
+COMING SOON
+</div>
+
+</div>
+
+</body>
+</html>
